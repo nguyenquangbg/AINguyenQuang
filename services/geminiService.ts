@@ -15,14 +15,14 @@ const getApiKey = () => {
 
 const ai = new GoogleGenAI({ apiKey: getApiKey() });
 
-// Model Constants
+// Model Constants - Optimized for high-quota free tier
 const MODELS = {
-    TEXT_FAST: 'gemini-3.1-flash-lite-preview',
+    TEXT_FAST: 'gemini-3-flash-preview',
     TEXT_SMART: 'gemini-3-flash-preview',
-    TEXT_PRO: 'gemini-3.1-pro-preview',
-    IMAGE_GEN: 'gemini-3.1-flash-image-preview',
-    IMAGE_PRO: 'gemini-3-pro-image-preview',
-    IMAGEN: 'imagen-4.0-generate-001'
+    TEXT_PRO: 'gemini-3-flash-preview', // Use Flash even for Pro to save quota
+    IMAGE_GEN: 'gemini-2.5-flash-image', // Nano Banana supports image generation
+    IMAGE_PRO: 'gemini-3.1-flash-image-preview',
+    IMAGEN: 'imagen-3.0-generate-001'
 };
 
 // Chat types

@@ -258,17 +258,17 @@ export const ImageGenerator: React.FC = () => {
                                 onClick={() => setUseGeminiModel(false)}
                                 className={`flex-1 py-2 text-xs font-semibold rounded-md transition-colors ${!useGeminiModel ? 'bg-white dark:bg-slate-600 shadow text-blue-600 dark:text-blue-300' : 'text-slate-500 dark:text-slate-400'}`}
                             >
-                                Imagen 4 (Chất lượng cao)
+                                Imagen 3 (Chất lượng cao)
                             </button>
                             <button 
                                 onClick={() => setUseGeminiModel(true)}
                                 className={`flex-1 py-2 text-xs font-semibold rounded-md transition-colors ${useGeminiModel ? 'bg-white dark:bg-slate-600 shadow text-purple-600 dark:text-purple-300' : 'text-slate-500 dark:text-slate-400'}`}
                             >
-                                Gemini 3.1 Flash (Tốc độ cao)
+                                Gemini Flash Image (Tốc độ cao)
                             </button>
                        </div>
                        <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 italic">
-                           {useGeminiModel ? 'Gemini 3.1 Flash tạo ra 4 biến thể nhanh chóng.' : 'Imagen 4 tạo ra hình ảnh chi tiết và nghệ thuật hơn.'}
+                           {useGeminiModel ? 'Gemini Flash Image tạo ra 4 biến thể nhanh chóng với hạn mức cao.' : 'Imagen 3 tạo ra hình ảnh chi tiết và nghệ thuật hơn.'}
                        </p>
                   </div>
               )}

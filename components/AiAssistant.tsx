@@ -146,9 +146,8 @@ export const AiAssistant: React.FC = () => {
             <div className="flex flex-wrap items-center gap-3">
                  {/* Model Selector */}
                  <div className="flex bg-slate-200 dark:bg-slate-700 p-1 rounded-lg">
-                    <button onClick={() => setModelMode('fast')} className={`px-3 py-1 text-xs font-semibold rounded-md transition-colors ${modelMode === 'fast' ? 'bg-white dark:bg-slate-600 shadow text-blue-600 dark:text-blue-300' : 'text-slate-600 dark:text-slate-400'}`}>Tốc độ</button>
-                    <button onClick={() => setModelMode('smart')} className={`px-3 py-1 text-xs font-semibold rounded-md transition-colors ${modelMode === 'smart' ? 'bg-white dark:bg-slate-600 shadow text-purple-600 dark:text-purple-300' : 'text-slate-600 dark:text-slate-400'}`}>Thông minh</button>
-                    <button onClick={() => setModelMode('thinking')} className={`px-3 py-1 text-xs font-semibold rounded-md transition-colors ${modelMode === 'thinking' ? 'bg-white dark:bg-slate-600 shadow text-amber-600 dark:text-amber-300' : 'text-slate-600 dark:text-slate-400'}`}>Suy luận sâu</button>
+                    <button onClick={() => setModelMode('fast')} className={`px-3 py-1 text-xs font-semibold rounded-md transition-colors ${modelMode === 'fast' ? 'bg-white dark:bg-slate-600 shadow text-blue-600 dark:text-blue-300' : 'text-slate-600 dark:text-slate-400'}`}>Siêu nhanh</button>
+                    <button onClick={() => setModelMode('smart')} className={`px-3 py-1 text-xs font-semibold rounded-md transition-colors ${modelMode === 'smart' ? 'bg-white dark:bg-slate-600 shadow text-purple-600 dark:text-purple-300' : 'text-slate-600 dark:text-slate-400'}`}>Cân bằng</button>
                  </div>
 
                  {/* Tools */}
